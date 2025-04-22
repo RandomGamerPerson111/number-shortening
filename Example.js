@@ -1,7 +1,7 @@
 const abbreviationssimple = ["M", "B", "T", "Qa", "Qn", "Sx", "Sp", "Oc", "No"]
 const ComplexEarly = ["","U","D","T","Qa","Qn","Sx","Sp","O","N"]
 const ComplexLate = ["Dc", "Vg", "Tg", "Ug", "Qi", "Se", "Sg", "Og", "Ng", "Ce"]
-var abbreviations = {}
+var abbreviations = []
 for (var item in abbreviationssimple) {
   abbreviations.push(item)
 }
