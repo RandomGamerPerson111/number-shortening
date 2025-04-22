@@ -3,11 +3,13 @@ const ComplexEarly = ["","U","D","T","Qa","Qn","Sx","Sp","O","N"]
 const ComplexLate = ["Dc", "Vg", "Tg", "Ug", "Qi", "Se", "Sg", "Og", "Ng", "Ce"]
 var abbreviations = []
 for (var item in abbreviationssimple) {
-  abbreviations.push(item)
+  abbreviations.push(abbreviationssimple[item])
 }
-for (var item in ComplexLate) {
+for (var item2 in ComplexLate) {
   for (var Early in ComplexEarly) {
-    abbreviations.push(Early+item)
+    abbreviations.push(ComplexEarly[Early]+ComplexLate[item2])
   }
 }
-console.log(abbreviations)
+for (var thingy in abbreviations) {
+  console.log(abbreviations[thingy])
+}
